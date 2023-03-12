@@ -52,7 +52,7 @@ RUN sed -i 's/^CipherString = .*/CipherString = DEFAULT@SECLEVEL=1/' /etc/ssl/op
 COPY --from=builder /dependencies /usr/local
 ENV PYTHONPATH=/usr/local
 
-EXPOSE 5000
+EXPOSE 5001
 
 # The actual flask app
 COPY changedetectionio /app/changedetectionio
