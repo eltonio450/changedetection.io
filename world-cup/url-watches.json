@@ -35,7 +35,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -91,7 +92,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -145,7 +147,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -199,7 +202,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -253,7 +257,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -307,7 +312,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -361,7 +367,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -415,7 +422,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -469,7 +477,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -523,7 +532,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -577,7 +587,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -631,7 +642,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -685,7 +697,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -739,7 +752,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -793,7 +807,8 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible"
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
                 "weeks": null,
@@ -848,8 +863,8 @@
                 "weeks": null,
                 "days": null,
                 "hours": null,
-                "minutes": null,
-                "seconds": 30
+                "minutes": 10,
+                "seconds": null
             },
             "timeout": 45,
             "workers": 20

@@ -10,4 +10,6 @@ git clone https://github.com/eltonio450/changedetection.io
 cd changedetection.io
 git checkout -b prod
 git pull origin prod
+pip3 install apprise
 bash run.sh
+
