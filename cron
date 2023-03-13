@@ -1,0 +1,2 @@
+28,58 * * * * docker restart rwc
+2,32 * * * * docker stop rwc
