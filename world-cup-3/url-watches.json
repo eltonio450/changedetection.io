@@ -1,0 +1,238 @@
+{
+    "note": "Hello! If you change this file manually, please be sure to restart your changedetection.io instance!",
+    "watching": {
+        "b6549519-9cba-4a37-b93e-cf70fb53b5c2": {
+            "body": null,
+            "check_unique_lines": false,
+            "check_count": 0,
+            "consecutive_filter_failures": 0,
+            "extract_text": [],
+            "extract_title_as_title": false,
+            "fetch_backend": "html_requests",
+            "filter_failure_notification_send": 1,
+            "has_ldjson_price_data": null,
+            "track_ldjson_price_data": null,
+            "headers": {
+                "Referer": "https://tickets.rugbyworldcup.com/fr",
+                "Referrer-Policy": "strict-origin-when-cross-origin"
+            },
+            "ignore_text": [],
+            "include_filters": [],
+            "last_checked": 0,
+            "last_error": false,
+            "last_viewed": 0,
+            "method": "GET",
+            "notification_body": null,
+            "notification_format": "System default",
+            "notification_muted": false,
+            "notification_title": null,
+            "notification_screenshot": false,
+            "notification_urls": [],
+            "pause": true,
+            "previous_md5": false,
+            "previous_md5_before_filters": "eae3309e060e2a6fbe188609bfed13a3",
+            "proxy": null,
+            "subtractive_selectors": [],
+            "tag": "",
+            "text_should_not_be_present": [
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
+            ],
+            "time_between_check": {
+                "weeks": null,
+                "days": null,
+                "hours": null,
+                "minutes": null,
+                "seconds": null
+            },
+            "title": "Revente - Vainqueur Poule D - Second Poule C | Coupe du Monde Rugby France 2023",
+            "trigger_text": [],
+            "url": "source:https://tickets.rugbyworldcup.com/fr/revente_quart_de_finale3",
+            "uuid": "b6549519-9cba-4a37-b93e-cf70fb53b5c2",
+            "webdriver_delay": null,
+            "webdriver_js_execute_code": null,
+            "last_notification_error": false,
+            "content_type": "text/html; charset=UTF-8",
+            "last_check_status": 200,
+            "fetch_time": 0.634
+        },
+        "35c23dcc-0e16-4c75-957a-55133b318fc8": {
+            "body": null,
+            "check_unique_lines": false,
+            "check_count": 0,
+            "consecutive_filter_failures": 0,
+            "extract_text": [],
+            "extract_title_as_title": false,
+            "fetch_backend": "html_requests",
+            "filter_failure_notification_send": 1,
+            "has_ldjson_price_data": null,
+            "track_ldjson_price_data": null,
+            "headers": {
+                "Referer": "https://tickets.rugbyworldcup.com/fr",
+                "Referrer-Policy": "strict-origin-when-cross-origin"
+            },
+            "ignore_text": [],
+            "include_filters": [],
+            "last_checked": 0,
+            "last_error": false,
+            "last_viewed": 0,
+            "method": "GET",
+            "notification_body": null,
+            "notification_format": "System default",
+            "notification_muted": false,
+            "notification_title": null,
+            "notification_screenshot": false,
+            "notification_urls": [],
+            "pause": true,
+            "previous_md5": false,
+            "previous_md5_before_filters": "d5f779a4b0ca565bcb89421a36d9c4c7",
+            "proxy": null,
+            "subtractive_selectors": [],
+            "tag": "",
+            "text_should_not_be_present": [
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
+            ],
+            "time_between_check": {
+                "weeks": null,
+                "days": null,
+                "hours": null,
+                "minutes": null,
+                "seconds": null
+            },
+            "title": "Revente - Vainqueur Poule B - Second Poule A | Coupe du Monde Rugby France 2023",
+            "trigger_text": [],
+            "url": "source:https://tickets.rugbyworldcup.com/fr/revente_quart_de_finale2",
+            "uuid": "35c23dcc-0e16-4c75-957a-55133b318fc8",
+            "webdriver_delay": null,
+            "webdriver_js_execute_code": null,
+            "last_notification_error": false,
+            "content_type": "text/html; charset=UTF-8",
+            "last_check_status": 200,
+            "fetch_time": 0.194
+        },
+        "1cf6c6d6-748d-4405-a7e4-08b45ce76243": {
+            "body": null,
+            "check_unique_lines": false,
+            "check_count": 0,
+            "consecutive_filter_failures": 0,
+            "extract_text": [],
+            "extract_title_as_title": false,
+            "fetch_backend": "html_requests",
+            "filter_failure_notification_send": 1,
+            "has_ldjson_price_data": null,
+            "track_ldjson_price_data": null,
+            "headers": {
+                "Referer": "https://tickets.rugbyworldcup.com/fr",
+                "Referrer-Policy": "strict-origin-when-cross-origin"
+            },
+            "ignore_text": [],
+            "include_filters": [],
+            "last_checked": 0,
+            "last_error": false,
+            "last_viewed": 0,
+            "method": "GET",
+            "notification_body": null,
+            "notification_format": "System default",
+            "notification_muted": false,
+            "notification_title": null,
+            "notification_screenshot": false,
+            "notification_urls": [],
+            "pause": true,
+            "previous_md5": false,
+            "previous_md5_before_filters": "9062864d7c7ffa3bc21c4541d115e04a",
+            "proxy": null,
+            "subtractive_selectors": [],
+            "tag": "",
+            "text_should_not_be_present": [
+                "Aucun billet n'est actuellement disponible",
+                "You need to enable JavaScript to run this app"
+            ],
+            "time_between_check": {
+                "weeks": null,
+                "days": null,
+                "hours": null,
+                "minutes": null,
+                "seconds": null
+            },
+            "title": "Revente - Vainqueur Poule C - Second Poule D | Coupe du Monde Rugby France 2023",
+            "trigger_text": [],
+            "url": "source:https://tickets.rugbyworldcup.com/fr/revente_quart_de_finale1",
+            "uuid": "1cf6c6d6-748d-4405-a7e4-08b45ce76243",
+            "webdriver_delay": null,
+            "webdriver_js_execute_code": null,
+            "last_notification_error": false,
+            "content_type": "text/html; charset=UTF-8",
+            "last_check_status": 200,
+            "fetch_time": 0.209
+        }
+    },
+    "settings": {
+        "headers": {
+            "Referer": "https://tickets.rugbyworldcup.com/fr",
+            "Referrer-Policy": "strict-origin-when-cross-origin"
+        },
+        "requests": {
+            "extra_proxies": [
+                {
+                    "proxy_name": "",
+                    "proxy_url": ""
+                },
+                {
+                    "proxy_name": "",
+                    "proxy_url": ""
+                },
+                {
+                    "proxy_name": "",
+                    "proxy_url": ""
+                },
+                {
+                    "proxy_name": "",
+                    "proxy_url": ""
+                },
+                {
+                    "proxy_name": "",
+                    "proxy_url": ""
+                }
+            ],
+            "jitter_seconds": 5,
+            "proxy": null,
+            "time_between_check": {
+                "weeks": null,
+                "days": null,
+                "hours": null,
+                "minutes": 1,
+                "seconds": null
+            },
+            "timeout": 45,
+            "workers": 20
+        },
+        "application": {
+            "api_access_token_enabled": true,
+            "password": false,
+            "base_url": "",
+            "extract_title_as_title": true,
+            "empty_pages_are_a_change": false,
+            "fetch_backend": "html_requests",
+            "filter_failure_notification_threshold_attempts": 0,
+            "global_ignore_text": [],
+            "global_subtractive_selectors": [],
+            "ignore_whitespace": true,
+            "render_anchor_tag_content": false,
+            "notification_urls": [
+                "slack://TDHM417H9/B04T3NWALDD/5YfsYVAqgPFRzr8fPIhx9w93"
+            ],
+            "notification_title": "{{ watch_title }}",
+            "notification_body": "URL si extension configur\u00e9e (voir avec Tonio): {{watch_url}}\r\n\r\nPasser par la home : https://tickets.rugbyworldcup.com/fr \r\n\r\n {{ current_snapshot }}",
+            "notification_format": "Markdown",
+            "schema_version": 10,
+            "shared_diff_access": false,
+            "webdriver_delay": 30,
+            "rss_access_token": "a75341a0408e8545a40257c96aaf83b0",
+            "api_access_token": "4f3ed27c12eb4b0c142af5c9da4d2715",
+            "removepassword_button": false
+        }
+    },
+    "app_guid": "eb04881d-582e-4e3d-99e1-6dd2c9b2bfa6",
+    "version_tag": "0.40.3"
+}
