@@ -885,7 +885,7 @@
                 "slack://TDHM417H9/B04T3NWALDD/5YfsYVAqgPFRzr8fPIhx9w93"
             ],
             "notification_title": "{{ watch_title }}",
-            "notification_body": "URL si extension configur\u00e9e (voir avec Tonio): {{watch_url}}\r\n\r\nPasser par la home : https://tickets.rugbyworldcup.com/fr",
+            "notification_body": "URL si extension configur\u00e9e (voir avec Tonio): {{watch_url}}\r\n\r\nPasser par la home : https://tickets.rugbyworldcup.com/fr \r\n\r\n {{ current_snapshot }}",
             "notification_format": "Markdown",
             "schema_version": 10,
             "shared_diff_access": false,
