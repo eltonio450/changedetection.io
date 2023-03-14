@@ -35,7 +35,7 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible",
+                "Aucun billet",
                 "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
@@ -92,7 +92,7 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible",
+                "Aucun billet",
                 "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
@@ -147,7 +147,7 @@
             "subtractive_selectors": [],
             "tag": "",
             "text_should_not_be_present": [
-                "Aucun billet n'est actuellement disponible",
+                "Aucun billet",
                 "You need to enable JavaScript to run this app"
             ],
             "time_between_check": {
@@ -172,7 +172,8 @@
     "settings": {
         "headers": {
             "Referer": "https://tickets.rugbyworldcup.com/fr",
-            "Referrer-Policy": "strict-origin-when-cross-origin"
+            "Referrer-Policy": "strict-origin-when-cross-origin",
+            "Cookie": "SSESSd01ad0e956e3c977e4fabd0c735f147f=M4aodvR8cJn1SKaRbkDF9tPQ3tlj6VLYbaj3TKURjnz5nYe3"
         },
         "requests": {
             "extra_proxies": [
