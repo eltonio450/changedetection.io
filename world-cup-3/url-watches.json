@@ -14,7 +14,8 @@
             "track_ldjson_price_data": null,
             "headers": {
                 "Referer": "https://tickets.rugbyworldcup.com/fr",
-                "Referrer-Policy": "strict-origin-when-cross-origin"
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "Cookie": "SSESSd01ad0e956e3c977e4fabd0c735f147f=M4aodvR8cJn1SKaRbkDF9tPQ3tlj6VLYbaj3TKURjnz5nYe3"
             },
             "ignore_text": [],
             "include_filters": [],
@@ -69,7 +70,8 @@
             "track_ldjson_price_data": null,
             "headers": {
                 "Referer": "https://tickets.rugbyworldcup.com/fr",
-                "Referrer-Policy": "strict-origin-when-cross-origin"
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "Cookie": "SSESSd01ad0e956e3c977e4fabd0c735f147f=M4aodvR8cJn1SKaRbkDF9tPQ3tlj6VLYbaj3TKURjnz5nYe3"
             },
             "ignore_text": [],
             "include_filters": [],
