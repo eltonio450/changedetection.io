@@ -857,13 +857,13 @@
                     "proxy_url": ""
                 }
             ],
-            "jitter_seconds": 15,
+            "jitter_seconds": 5,
             "proxy": null,
             "time_between_check": {
                 "weeks": null,
                 "days": null,
                 "hours": null,
-                "minutes": 10,
+                "minutes": 1,
                 "seconds": null
             },
             "timeout": 45,
