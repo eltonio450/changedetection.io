@@ -6,7 +6,9 @@
             "check_unique_lines": false,
             "check_count": 0,
             "consecutive_filter_failures": 0,
-            "extract_text": [],
+            "extract_text": [
+                "\\\"resale\\\":(.+),\\\"currency\\\""
+            ],
             "extract_title_as_title": false,
             "fetch_backend": "html_requests",
             "filter_failure_notification_send": 1,
@@ -62,7 +64,9 @@
             "check_unique_lines": false,
             "check_count": 0,
             "consecutive_filter_failures": 0,
-            "extract_text": [],
+            "extract_text": [
+                "\\\"resale\\\":(.+),\\\"currency\\\""
+            ],
             "extract_title_as_title": false,
             "fetch_backend": "html_requests",
             "filter_failure_notification_send": 1,
@@ -118,7 +122,9 @@
             "check_unique_lines": false,
             "check_count": 0,
             "consecutive_filter_failures": 0,
-            "extract_text": [],
+            "extract_text": [
+                "\\\"resale\\\":(.+),\\\"currency\\\""
+            ],
             "extract_title_as_title": false,
             "fetch_backend": "html_requests",
             "filter_failure_notification_send": 1,
