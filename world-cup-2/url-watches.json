@@ -50,7 +50,9 @@
                 "seconds": null
             },
             "title": "Revente - Vainqueur QF3 - Vainqueur QF4 | Coupe du Monde Rugby France 2023",
-            "trigger_text": [],
+             "trigger_text": [
+                "\\\"resale\\\""
+            ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_demi_finale2",
             "uuid": "5e0bf31c-a67b-45dd-a165-2236eb69736f",
             "webdriver_delay": null,
@@ -109,7 +111,9 @@
                 "seconds": null
             },
             "title": "Revente - Vainqueur QF1 - Vainqueur QF2 | Coupe du Monde Rugby France 2023",
-            "trigger_text": [],
+             "trigger_text": [
+                "\\\"resale\\\""
+            ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_demi_finale1",
             "uuid": "3a2fb562-7ba2-4704-aff3-e1705ee40584",
             "webdriver_delay": null,
@@ -168,7 +172,9 @@
                 "seconds": null
             },
             "title": "Revente - Vainqueur Poule A - Second Poule B | Coupe du Monde Rugby France 2023",
-            "trigger_text": [],
+             "trigger_text": [
+                "\\\"resale\\\""
+            ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_quart_de_finale4",
             "uuid": "f27e0ac2-9d6e-4c6b-84af-ed3dbdfb3898",
             "webdriver_delay": null,

@@ -50,7 +50,9 @@
                 "seconds": null
             },
             "title": "Revente - Nouvelle Z\u00e9lande - Italie | Coupe du Monde Rugby France 2023",
-            "trigger_text": [],
+             "trigger_text": [
+                "\\\"resale\\\""
+            ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_nouvelle_zelande_italie",
             "uuid": "2eb48fb3-5d65-4204-8e3e-3e6cf5e66ea1",
             "webdriver_delay": null,
@@ -109,7 +111,9 @@
                 "seconds": null
             },
             "title": "Revente - France - Uruguay | Coupe du Monde Rugby France 2023",
-            "trigger_text": [],
+             "trigger_text": [
+                "\\\"resale\\\""
+            ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_france_uruguay",
             "uuid": "0a2c1c85-b509-46b7-83dc-007a5582697e",
             "webdriver_delay": null,
@@ -168,7 +172,9 @@
                 "seconds": null
             },
             "title": "Revente - France - Namibie | Coupe du Monde Rugby France 2023",
-            "trigger_text": [],
+             "trigger_text": [
+                "\\\"resale\\\""
+            ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_france_namibie",
             "uuid": "d3a01a62-8717-4732-ba84-10ed7f42ec8d",
             "webdriver_delay": null,
