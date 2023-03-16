@@ -21,7 +21,7 @@ const body = {
   }
 
 
-const token = ""
+const token = "SSESSd01ad0e956e3c977e4fabd0c735f147f=uN9K4PFY5ZrjjQsnfz45t1PJ8LpJ4VlXvPL%2CcgzanMfk4CTB"
   
 console.log(body)
 
@@ -29,6 +29,9 @@ const querystring = require('querystring');
 
 let queryString = querystring.stringify(body);
 
-console.log(queryString)
 
-submitForm("https://tickets.rugbyworldcup.com/fr/revente_angleterre_argentine?ajax_form=1&_wrapper_format=drupal_ajax", )
+
+const promise = submitForm("https://tickets.rugbyworldcup.com/fr/revente_angleterre_argentine?ajax_form=1&_wrapper_format=drupal_ajax", token, queryString)
+
+
+promise.then(response => response.text()).then(console.log)

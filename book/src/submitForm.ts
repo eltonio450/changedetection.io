@@ -1,3 +1,5 @@
+import * as fetch from 'node-fetch';
+
 export const submitForm = (url: string, cookie: string, body: string) => fetch(url, {
   "headers": {
     "accept": "application/json, text/javascript, */*; q=0.01",
