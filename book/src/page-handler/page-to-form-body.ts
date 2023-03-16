@@ -37,17 +37,17 @@ export const selectionPageToBody = (page: string): NoSelectionBody => {
   };
 };
 
-
 export const noSelectionPageToBody = (page: string): NoSelectionBody => {
   const root = HTMLParser.parse(page);
 
   const regex = /"_triggering_element_name":"([a-zA-Z_0-9]+)"/;
   const match = regex.exec(page);
 
-
-  const selectedTickets = root.querySelector('input[name^="selected_tickets_"]')
-  const selectedTicketsName = selectedTickets?._attrs?.name
-  const selectedTickersValue = selectedTickets?._attrs?.value
+  const selectedTickets = root.querySelector(
+    'input[name^="selected_tickets_"]'
+  );
+  const selectedTicketsName = selectedTickets?._attrs?.name;
+  const selectedTickersValue = selectedTickets?._attrs?.value;
 
   const form_token = root.querySelector('input[name="form_token"]')._attrs
     .value;

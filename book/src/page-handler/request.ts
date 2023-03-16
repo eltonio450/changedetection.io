@@ -26,8 +26,6 @@ const token =
 
 console.log(body);
 
-
-
 const promise = submitForm(
   "https://tickets.rugbyworldcup.com/fr/revente_angleterre_argentine?ajax_form=1&_wrapper_format=drupal_ajax",
   token,
