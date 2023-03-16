@@ -50,8 +50,8 @@
                 "seconds": null
             },
             "title": "Revente - France - Nouvelle Z\u00e9lande | Coupe du Monde Rugby France 2023",
-             "trigger_text": [
-                "\\\"resale\\\""
+            "trigger_text": [
+                "\"name\""
             ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_france_nouvelle_zelande",
             "uuid": "73f38b8f-3113-4c0e-bdd3-abeb6e6a8718",
@@ -113,8 +113,8 @@
                 "seconds": null
             },
             "title": "Revente - Vainqueur SF1 - Vainqueur SF2 | Coupe du Monde Rugby France 2023",
-             "trigger_text": [
-                "\\\"resale\\\""
+            "trigger_text": [
+                "\"name\""
             ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_finale",
             "uuid": "c7234255-0a4a-4c9c-bc12-6fa62c93f4eb",
@@ -174,8 +174,8 @@
                 "seconds": null
             },
             "title": "Revente - Finaliste SF1 - Finaliste SF2 | Coupe du Monde Rugby France 2023",
-             "trigger_text": [
-                "\\\"resale\\\""
+            "trigger_text": [
+                "\"name\""
             ],
             "url": "source:https://tickets.rugbyworldcup.com/fr/revente_finale_de_bronze",
             "uuid": "908084da-0a6f-4f84-a66f-f0f46c189fba",
