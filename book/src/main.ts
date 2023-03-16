@@ -1,4 +1,3 @@
-import { fetchMainPage } from "./fetch-main-page";
 import { noSelectionPageToBody } from "./page-handler/page-to-form-body";
 import * as fs from "fs";
 
@@ -8,21 +7,27 @@ const url = "https://tickets.rugbyworldcup.com/fr/revente_france_namibie";
 
 import Fastify from "fastify";
 import { submitForm } from "./page-handler/submitForm";
+import { fetchMainPage } from "./page-handler/fetch-main-page";
 const fastify = Fastify({
   logger: true,
 });
 
 const main = async (url: string) => {
-  const initialPage = await (await fetchMainPage(url, token)).text();
-  console.log("initial page fetched");
-  fs.writeFileSync("log.html", initialPage);
-  const body = noSelectionPageToBody(initialPage);
-  console.log(body);
-  const querystring = require("querystring");
+    try {  const initialPage = await (await fetchMainPage(url, cookie)).text();
+        console.log("initial page fetched");
+        fs.writeFileSync("log.html", initialPage);
+        const body = noSelectionPageToBody(initialPage);
+        console.log(body);
+        const querystring = require("querystring");
+      
+        let queryString = querystring.stringify(body);
+        const result = await submitForm(url, cookie, queryString);
+        console.log(await result.text());
+    }
+    catch(err) {
+        console.log(err)
+    }
 
-  let queryString = querystring.stringify(body);
-  const result = await submitForm(url, cookie, queryString);
-  console.log(await result.text());
 };
 
 // Declare a route
@@ -30,12 +35,13 @@ fastify.get("/", function (request, reply) {
   reply.send({ hello: "world" });
 });
 
-fastify.post("/", function (request, reply) {
+fastify.post("/", async function (request, reply) {
+    console.log("date", new Date())
   const message = request.body.message;
   console.log("Message:", message);
   const url = message.match(/#(.+)#/)[1];
   console.log("URL:", url);
-  main(url);
+  await main(url);
   reply.send({ url });
 });
 

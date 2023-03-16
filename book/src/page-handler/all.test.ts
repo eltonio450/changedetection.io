@@ -1,10 +1,10 @@
 import * as fs from "fs";
-import { noSelectionPageToBody } from "./page-to-form-body";
+import { noSelectionPageToBody, pageToFormBody } from "./page-to-form-body";
 
 it("no selection page", () => {
   const page = fs.readFileSync("./data/ang-arg/page.html").toString();
   console.log(page);
-  expect(noSelectionPageToBody(page)).toEqual({
+  expect(pageToFormBody(page)).toEqual({
     nb_tickets_selector: {
       quantity: "0",
     },
@@ -19,8 +19,8 @@ it("no selection page", () => {
 
 it("selection page", () => {
   const page = fs.readFileSync("./data/irl-eco/page.html").toString();
-  console.log(page);
-  expect(noSelectionPageToBody(page)).toEqual({
+  console.log(pageToFormBody(page));
+  expect(pageToFormBody(page)).toEqual({
     nb_tickets_selector: {
       quantity: "0",
     },
@@ -33,3 +33,4 @@ it("selection page", () => {
     _triggering_element_value: "Ajouter à mon panier",
   });
 });
+
