@@ -1,7 +1,7 @@
 import { cookie } from "../main";
 import fetch from "node-fetch";
 
-const refetch = (token: string) => async () => {
+export const refreshToken = (token: string) => async () => {
   const result = await fetch("https://tickets.rugbyworldcup.com/fr", {
     headers: {
       accept:
@@ -28,7 +28,7 @@ const refetch = (token: string) => async () => {
   console.log("refresh, status:", result.status);
 };
 
-export const refreshToken = () => setInterval(refetch(cookie), 20 * 60 * 1000);
+export const refreshTokenPeriodically = (period =  20 * 60 * 1000) => setInterval(refreshToken(cookie), period);
 
 export const ping = () =>
   setInterval(

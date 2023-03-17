@@ -1,5 +1,7 @@
-import { noSelectionPageToBody } from "./page-handler/page-to-form-body";
+import { pageToFormBody } from "./page-handler/page-to-form-body";
 import * as fs from "fs";
+const querystring = require("querystring");
+import { refreshToken } from "./utils/refresh-token"
 
 export const cookie =
   "SSESSd01ad0e956e3c977e4fabd0c735f147f=b2nXuxciV7y2klmrZnR256v6Dt0%2Czo-yjqNTyAduGhoo6k3Z;";
@@ -8,22 +10,26 @@ const url = "https://tickets.rugbyworldcup.com/fr/revente_france_namibie";
 import Fastify from "fastify";
 import { submitForm } from "./page-handler/submitForm";
 import { fetchMainPage } from "./page-handler/fetch-main-page";
-import { ping, refreshToken } from "./utls/refresh-token";
+import { ping, refreshTokenPeriodically } from "./utils/refresh-token";
 const fastify = Fastify({
   logger: true,
 });
+
+refreshToken(cookie)()
 
 const main = async (url: string) => {
   try {
     const initialPage = await (await fetchMainPage(url, cookie)).text();
     console.log("initial page fetched");
     fs.writeFileSync("log.html", initialPage);
-    const body = noSelectionPageToBody(initialPage);
-    console.log(body);
-    const querystring = require("querystring");
+    const formData = pageToFormBody(initialPage);
+    console.log("formData extracted")
+    console.log(formData);
 
-    let queryString = querystring.stringify(body);
-    const result = await submitForm(url, cookie, queryString);
+
+    const formDataQueryString = querystring.stringify(formData);
+    console.log(formDataQueryString)
+    const result = await submitForm(url, cookie, formDataQueryString);
     console.log(await result.text());
   } catch (err) {
     console.log(err);
@@ -54,5 +60,5 @@ fastify.listen({ port: 5002 }, function (err, address) {
   // Server is now listening on ${address}
 });
 
-refreshToken();
+refreshTokenPeriodically();
 ping();
