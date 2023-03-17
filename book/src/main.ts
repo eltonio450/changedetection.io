@@ -1,12 +1,12 @@
 import { pageToFormBody } from "./page-handler/page-to-form-body";
 import * as fs from "fs";
-const querystring = require("querystring");
 import { refreshToken } from "./utils/refresh-token";
 
 import Fastify from "fastify";
 import { submitForm } from "./page-handler/submitForm";
 import { fetchMainPage } from "./page-handler/fetch-main-page";
 import { ping, refreshTokenPeriodically } from "./utils/refresh-token";
+import { getCart } from "./utils/cart";
 const fastify = Fastify({
   logger: true,
 });
@@ -22,14 +22,17 @@ const main = async (url: string) => {
     console.log("formData extracted");
     console.log(formData);
 
-    const formDataQueryString = querystring.stringify(formData);
-    console.log(formDataQueryString);
-    const result = await submitForm(url, formDataQueryString);
+
+    const result = await submitForm(url, formData);
     console.log("---- Result received -----");
     console.log("Status: ", result.status);
-    console.log(result);
     const textReponse = result.data;
-    console.log("textReponse:", textReponse);
+    console.log("Reponse:", textReponse);
+
+    console.log("Fetching cart....")
+    const cart = await getCart()
+    console.log("cart status:", cart.status)
+
   } catch (err) {
     console.log(err);
   }

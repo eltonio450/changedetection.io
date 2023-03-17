@@ -53,7 +53,6 @@ export const noSelectionPageToBody = (
   form: string,
   token: string
 ) => {
-  const parsedPage = HTMLParser.parse(page);
   const parsedForm = HTMLParser.parse(form);
 
   const regex = /"_triggering_element_name":"([a-zA-Z_0-9]+)"/;

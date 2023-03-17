@@ -17,3 +17,4 @@ test-datastore
 /node_modules
 
 **/log.html
+**/cart*
