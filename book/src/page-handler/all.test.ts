@@ -33,4 +33,3 @@ it("selection page", () => {
     _triggering_element_value: "Ajouter à mon panier",
   });
 });
-

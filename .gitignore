@@ -16,4 +16,4 @@ test-datastore
 **/node_modules/
 /node_modules
 
-./book/log.html
+**/log.html

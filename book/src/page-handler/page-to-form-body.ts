@@ -50,8 +50,6 @@ export const noSelectionPageToBody = (page: string) => {
   const regex = /"_triggering_element_name":"([a-zA-Z_0-9]+)"/;
   const match = regex.exec(page);
 
-
-
   const form_token = root.querySelector('input[name="form_token"]')._attrs
     .value;
   const form_id = root.querySelector('input[name="form_id"]')._attrs.value;
@@ -73,14 +71,10 @@ export const noSelectionPageToBody = (page: string) => {
 
 export const pageToFormBody = (page: string) => {
   const root = HTMLParser.parse(page);
-  if(root.querySelector(
-    'input[name^="selected_tickets_"]'
-  )) {
-    console.log("ok il y a")
-    return selectionPageToBody(page)
+  if (root.querySelector('input[name^="selected_tickets_"]')) {
+    console.log("ok il y a");
+    return selectionPageToBody(page);
+  } else {
+    return noSelectionPageToBody(page);
   }
-  else {
-    return noSelectionPageToBody(page)
-  }
-
-}
+};
