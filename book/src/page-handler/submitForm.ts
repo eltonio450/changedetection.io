@@ -1,7 +1,7 @@
-import * as fetch from "node-fetch";
+import axios from "axios";
 
 export const submitForm = (url: string, cookie: string, body: string) =>
-  fetch(url, {
+  axios.post(url, {
     headers: {
       accept: "application/json, text/javascript, */*; q=0.01",
       "accept-language":

@@ -1,7 +1,7 @@
 import { pageToFormBody } from "./page-handler/page-to-form-body";
 import * as fs from "fs";
 const querystring = require("querystring");
-import { refreshToken } from "./utils/refresh-token"
+import { refreshToken } from "./utils/refresh-token";
 
 export const cookie =
   "SSESSd01ad0e956e3c977e4fabd0c735f147f=b2nXuxciV7y2klmrZnR256v6Dt0%2Czo-yjqNTyAduGhoo6k3Z;";
@@ -15,22 +15,25 @@ const fastify = Fastify({
   logger: true,
 });
 
-refreshToken(cookie)()
+refreshToken(cookie)();
 
 const main = async (url: string) => {
   try {
-    const initialPage = await (await fetchMainPage(url, cookie)).text();
+    const initialPage = (await fetchMainPage(url, cookie)).data;
     console.log("initial page fetched");
     fs.writeFileSync("log.html", initialPage);
     const formData = pageToFormBody(initialPage);
-    console.log("formData extracted")
+    console.log("formData extracted");
     console.log(formData);
 
-
     const formDataQueryString = querystring.stringify(formData);
-    console.log(formDataQueryString)
+    console.log(formDataQueryString);
     const result = await submitForm(url, cookie, formDataQueryString);
-    console.log(await result.text());
+    console.log("---- Result received -----");
+    console.log("Status: ", result.status);
+    console.log(result);
+    const textReponse = result.data;
+    console.log("textReponse:", textReponse);
   } catch (err) {
     console.log(err);
   }
@@ -43,6 +46,7 @@ fastify.get("/", function (request, reply) {
 
 fastify.post("/", async function (request, reply) {
   console.log("date", new Date());
+  //@ts-ignore
   const message = request.body.message;
   console.log("Message:", message);
   const url = message.match(/#source:(.+)#/)[1];

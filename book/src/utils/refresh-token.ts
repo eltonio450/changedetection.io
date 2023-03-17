@@ -22,13 +22,13 @@ export const refreshToken = (token: string) => async () => {
       Referer: "https://tickets.rugbyworldcup.com/fr",
       "Referrer-Policy": "strict-origin-when-cross-origin",
     },
-    body: null,
     method: "GET",
   });
   console.log("refresh, status:", result.status);
 };
 
-export const refreshTokenPeriodically = (period =  20 * 60 * 1000) => setInterval(refreshToken(cookie), period);
+export const refreshTokenPeriodically = (period = 20 * 60 * 1000) =>
+  setInterval(refreshToken(cookie), period);
 
 export const ping = () =>
   setInterval(
