@@ -17,7 +17,6 @@ export const selectionPageToBody = (
   form: string,
   token: string
 ) => {
-  const parsedPage = HTMLParser.parse(page);
   const parsedForm = HTMLParser.parse(form);
 
   const selectedTickets = parsedForm.querySelector(

@@ -3,10 +3,6 @@ import * as fs from "fs";
 const querystring = require("querystring");
 import { refreshToken } from "./utils/refresh-token";
 
-export const cookie =
-  "SSESSd01ad0e956e3c977e4fabd0c735f147f=b2nXuxciV7y2klmrZnR256v6Dt0%2Czo-yjqNTyAduGhoo6k3Z;";
-const url = "https://tickets.rugbyworldcup.com/fr/revente_france_namibie";
-
 import Fastify from "fastify";
 import { submitForm } from "./page-handler/submitForm";
 import { fetchMainPage } from "./page-handler/fetch-main-page";
@@ -15,11 +11,11 @@ const fastify = Fastify({
   logger: true,
 });
 
-refreshToken(cookie)();
+refreshToken();
 
 const main = async (url: string) => {
   try {
-    const initialPage = (await fetchMainPage(url, cookie)).data;
+    const initialPage = (await fetchMainPage(url)).data;
     console.log("initial page fetched");
     fs.writeFileSync("log.html", initialPage);
     const formData = pageToFormBody(initialPage);
@@ -28,7 +24,7 @@ const main = async (url: string) => {
 
     const formDataQueryString = querystring.stringify(formData);
     console.log(formDataQueryString);
-    const result = await submitForm(url, cookie, formDataQueryString);
+    const result = await submitForm(url, formDataQueryString);
     console.log("---- Result received -----");
     console.log("Status: ", result.status);
     console.log(result);
