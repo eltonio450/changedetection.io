@@ -39,7 +39,7 @@ fastify.post("/", async function (request, reply) {
   console.log("date", new Date());
   const message = request.body.message;
   console.log("Message:", message);
-  const url = message.match(/#(.+)#/)[1];
+  const url = message.match(/#source:(.+)#/)[1];
   console.log("URL:", url);
   await main(url);
   reply.send({ url });
