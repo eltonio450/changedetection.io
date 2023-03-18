@@ -1,6 +1,7 @@
 import { pageToFormBody } from "./page-handler/page-to-form-body";
 import * as fs from "fs";
 import { refreshToken } from "./utils/refresh-token";
+import "./ngrok"
 
 import Fastify from "fastify";
 import { submitForm } from "./page-handler/submitForm";
@@ -10,6 +11,8 @@ import { extractCartInfo, getCart } from "./utils/cart";
 const fastify = Fastify({
   logger: true,
 });
+
+
 
 refreshToken();
 

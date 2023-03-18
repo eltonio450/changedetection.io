@@ -220,8 +220,8 @@
                 "weeks": null,
                 "days": null,
                 "hours": null,
-                "minutes": 1,
-                "seconds": null
+                "minutes": null,
+                "seconds": 35
             },
             "timeout": 45,
             "workers": 20
@@ -240,7 +240,7 @@
             "render_anchor_tag_content": false,
             "notification_urls": [
                 "slack://TDHM417H9/B04T3NWALDD/5YfsYVAqgPFRzr8fPIhx9w93",
-                "json://rwc.ngrok.app"
+                "json://ovr.ngrok.io"
             ],
             "notification_title": "{{ watch_title }}",
             "notification_body": "URL si extension configur\u00e9e (voir avec Tonio): {{watch_url}}\r\n\r\nPasser par la home : https://tickets.rugbyworldcup.com/fr \r\n\r\n {{ current_snapshot }} \r\n\r\nURL: #{{ watch_url }}#",
