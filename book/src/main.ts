@@ -6,7 +6,7 @@ import Fastify from "fastify";
 import { submitForm } from "./page-handler/submitForm";
 import { fetchMainPage } from "./page-handler/fetch-main-page";
 import { ping, refreshTokenPeriodically } from "./utils/refresh-token";
-import { getCart } from "./utils/cart";
+import { extractCartInfo, getCart } from "./utils/cart";
 const fastify = Fastify({
   logger: true,
 });
@@ -22,17 +22,17 @@ const main = async (url: string) => {
     console.log("formData extracted");
     console.log(formData);
 
-
     const result = await submitForm(url, formData);
     console.log("---- Result received -----");
     console.log("Status: ", result.status);
     const textReponse = result.data;
     console.log("Reponse:", textReponse);
 
-    console.log("Fetching cart....")
-    const cart = await getCart()
-    console.log("cart status:", cart.status)
-
+    console.log("Fetching cart....");
+    const cart = await getCart();
+    console.log("cart status:", cart.status);
+    await extractCartInfo(cart.data)
+    console.log("done.")
   } catch (err) {
     console.log(err);
   }
